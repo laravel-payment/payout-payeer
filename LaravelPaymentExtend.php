@@ -10,6 +10,6 @@ class LaravelPaymentExtend
 {
     public function handle(PaymentServiceBooted $paymentBooted)
     {
-        $paymentBooted->extendService('payeer', __NAMESPACE__ . '\Provider');
+        $paymentBooted->extendService('payeer', Provider::class);
     }
 }

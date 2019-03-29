@@ -4,9 +4,9 @@
 namespace LaravelPayment\PayoutPayeer;
 
 
-use LaravelPayment\Manager\Contracts\Payout\Provider as ProviderContract;
+use LaravelPayment\Manager\Payout\ProviderAbstract;
 
-class Provider implements ProviderContract
+class Provider extends ProviderAbstract
 {
     public function withdraw()
     {
